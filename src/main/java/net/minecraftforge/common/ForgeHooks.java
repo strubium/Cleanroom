@@ -173,20 +173,17 @@ public class ForgeHooks
     {
         @Nonnull
         public final ItemStack seed;
-
         public SeedEntry(@Nonnull ItemStack seed, int weight)
         {
             super(weight);
             this.seed = seed;
         }
-
         @Nonnull
         public ItemStack getStack(Random rand, int fortune)
         {
             return seed.copy();
         }
     }
-
     static final List<SeedEntry> seedList = new ArrayList<SeedEntry>();
 
     @Nonnull

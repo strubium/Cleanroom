@@ -68,7 +68,7 @@ import org.lwjgl.opengl.GL11;
 
 /**
  * @author cpw
- * 
+ *
  */
 public class GuiModList extends GuiScreen
 {
