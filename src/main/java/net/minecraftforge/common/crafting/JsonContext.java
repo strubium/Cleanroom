@@ -31,8 +31,7 @@ import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.JsonUtils;
 
 /**
- * This class represents a context for JSON parsing in Minecraft Forge modding.
- * It holds information about the mod ID and constants used in crafting recipes.
+ * A context holds information including modid and constants used in deserialization of crafting recipes.
  */
 public class JsonContext
 {

@@ -22,8 +22,7 @@ package net.minecraftforge.fml.client;
 import java.util.Map;
 
 /**
- * This class represents extended server list data. It contains information about the server type, compatibility, 
- * mod data, and whether the server is blocked.
+ * The extended server list data contains information about the server type, compatibility, mod data, and whether the server is blocked.
  */
 public class ExtendedServerListData {
     public final String type;

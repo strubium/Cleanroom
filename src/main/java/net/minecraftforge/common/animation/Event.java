@@ -38,11 +38,17 @@ public final class Event implements Comparable<Event>
         this.offset = offset;
     }
 
+    /**
+     * @return the name of the event.
+     * /
     public String event()
     {
         return event;
     }
 
+    /**
+     * @return how long ago the event happened, relative to the next event / first query time
+     */
     public float offset()
     {
         return offset;

@@ -168,6 +168,7 @@ import org.apache.commons.io.IOUtils;
 
 public class ForgeHooks
 {
+    //TODO: Loot tables?
     static class SeedEntry extends WeightedRandom.Item
     {
         @Nonnull

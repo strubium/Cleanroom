@@ -67,8 +67,6 @@ import com.google.common.base.Strings;
 import org.lwjgl.opengl.GL11;
 
 /**
- * This class represents the GUI screen for the mod list.
- *
  * @author cpw
  */
 public class GuiModList extends GuiScreen

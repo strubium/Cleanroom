@@ -20,9 +20,6 @@
 package net.minecraftforge.client;
 
 /**
- * This interface is deprecated and will be removed in 1.13. It has never been used.
- * It provides methods to be called before and after a specific rendering context.
- *
  * @deprecated TODO remove in 1.13. This has never been used
  */
 @Deprecated
