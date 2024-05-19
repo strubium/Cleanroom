@@ -31,7 +31,7 @@ public class ForgeClientHandler
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event)
     {
-        // register model for the universal bucket, if it is enabled
+        // register model for the universal bucket, if it exists
         if (FluidRegistry.isUniversalBucketEnabled())
         {
             ModelLoader.setBucketModelDefinition(ForgeModContainer.getInstance().universalBucket);
