@@ -26,32 +26,18 @@ import net.minecraftforge.common.ForgeModContainer;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-/**
- * This class is responsible for handling client-side events in Minecraft Forge.
- * It registers models and item color handlers for the universal bucket.
- */
 public class ForgeClientHandler
 {
-    /**
-     * Registers models for the universal bucket if it is enabled.
-     *
-     * @param event The ModelRegistryEvent that triggered this method.
-     */
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event)
     {
-        // register model for the universal bucket, if it exists
+        // register model for the universal bucket, if it is enabled
         if (FluidRegistry.isUniversalBucketEnabled())
         {
             ModelLoader.setBucketModelDefinition(ForgeModContainer.getInstance().universalBucket);
         }
     }
 
-    /**
-     * Registers an item color handler for the universal bucket if it is enabled.
-     *
-     * @param event The ColorHandlerEvent.Item that triggered this method.
-     */
     @SubscribeEvent
     public static void registerItemHandlers(ColorHandlerEvent.Item event)
     {
