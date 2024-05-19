@@ -206,7 +206,7 @@ public class ForgeHooks
 
     public static boolean canContinueUsing(@Nonnull ItemStack from, @Nonnull ItemStack to)
     {
-        if (!from.isEmpty() &&!to.isEmpty())
+        if (!from.isEmpty() && !to.isEmpty())
         {
             return from.getItem().canContinueUsing(from, to);
         }

@@ -654,7 +654,7 @@ public class SplashProgress
         }
         lock.unlock();
     }
-    
+
     /**
      * Finishes the splash screen rendering.
      * This method should be called when loading is done.

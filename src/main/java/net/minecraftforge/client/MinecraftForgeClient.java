@@ -52,7 +52,7 @@ public class MinecraftForgeClient
     {
         return ForgeHooksClient.renderPass;
     }
-    
+
     public static BlockRenderLayer getRenderLayer()
     {
         return ForgeHooksClient.renderLayer.get();
@@ -72,6 +72,7 @@ public class MinecraftForgeClient
     {
         stencilBits.set(0,8);
     }
+
     /**
      * Reserve a stencil bit for use in rendering
      *
@@ -140,7 +141,7 @@ public class MinecraftForgeClient
     {
         bufferedImageSuppliers.put(resourceLocation, supplier);
     }
-    
+
     /**
      * Returns a BufferedImage for the specified resource location.
      * If a supplier has been registered for the resource location, it will be used to create the BufferedImage.

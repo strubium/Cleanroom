@@ -40,7 +40,7 @@ public final class Event implements Comparable<Event>
 
     /**
      * @return the name of the event.
-     * /
+     */
     public String event()
     {
         return event;
