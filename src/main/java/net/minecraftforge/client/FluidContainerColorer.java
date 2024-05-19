@@ -26,15 +26,12 @@ import net.minecraftforge.fluids.FluidUtil;
 
 import javax.annotation.Nonnull;
 
-/**
- * Provide custom coloring for items which contains fluids.
- */
 public class FluidContainerColorer implements IItemColor
 {
     @Override
     public int colorMultiplier(@Nonnull ItemStack stack, int tintIndex)
     {
-        if (tintIndex!= 1) return 0xFFFFFFFF;
+        if (tintIndex != 1) return 0xFFFFFFFF;
         FluidStack fluidStack = FluidUtil.getFluidContained(stack);
         if (fluidStack == null) return 0xFFFFFFFF;
         return fluidStack.getFluid().getColor(fluidStack);
