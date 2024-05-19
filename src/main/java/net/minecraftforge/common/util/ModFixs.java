@@ -34,8 +34,10 @@ import net.minecraft.util.datafix.IFixableData;
 public class ModFixs
 {
     private static final Logger LOGGER = LogManager.getLogger();
+
     final String mod;
     final int version;
+
     private final Map<IFixType, List<IFixableData>> fixes = Maps.newHashMap();
 
     ModFixs(String mod, int version)
@@ -74,5 +76,4 @@ public class ModFixs
         else
             list.add(fixer);
     }
-
 }
